@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded',function(){
   navToggle.addEventListener('click', function() {
     mainNav.classList.toggle('open');
   });
-  }
 
   // google-review-carousel carousel
   const carousel = document.getElementById('google-review-carousel');
