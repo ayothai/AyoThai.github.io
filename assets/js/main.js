@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded',function(){
     });
   }
 
-  // simple testimonial carousel
-  const carousel = document.getElementById('testimonial-carousel');
+  // google-review-carousel carousel
+  const carousel = document.getElementById('google-review-carousel');
   if(carousel){
     let i=0; const items = Array.from(carousel.querySelectorAll('.quote'));
     items.forEach((it,idx)=>{ if(idx!==0) it.style.display='none'; });
