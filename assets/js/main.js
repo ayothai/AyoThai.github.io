@@ -5,13 +5,11 @@ document.addEventListener('DOMContentLoaded',function(){
   if(yearEl) yearEl.textContent = y;
 
   // mobile nav
-  const toggle = document.getElementById('nav-toggle');
-  const nav = document.getElementById('main-nav');
-  if(toggle && nav){
-    toggle.addEventListener('click', ()=>{
-      if(nav.style.display === 'block') nav.style.display = '';
-      else nav.style.display = 'block';
-    });
+ var navToggle = document.getElementById('nav-toggle');
+  var mainNav = document.getElementById('main-nav');
+  navToggle.addEventListener('click', function() {
+    mainNav.classList.toggle('open');
+  });
   }
 
   // google-review-carousel carousel
@@ -26,3 +24,5 @@ document.addEventListener('DOMContentLoaded',function(){
     },4500);
   }
 });
+
+
